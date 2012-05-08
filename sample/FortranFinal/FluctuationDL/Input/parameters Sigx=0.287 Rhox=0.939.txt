@@ -1,9 +1,0 @@
-0.981603D0			beta : discount rate
-190.0D0				B	 : weight on disutility from working
-0.4D0				gama : intertemporal substitution elasticity = 1/gama
-0.0D0				avex : average of log idiosyncratic productivity
-0.939D0				rhox : persistence of log idiosyncratic productivity
-0.287D0				sigex: stdev of innovation to log idiosyncratic productivity
-0.0D0				avep : average of log aggregate productivity
-0.95D0				rhop : persistence of log aggregate productivity
-0.007D0				sigep: stdev of innovation to log aggregate productivity
