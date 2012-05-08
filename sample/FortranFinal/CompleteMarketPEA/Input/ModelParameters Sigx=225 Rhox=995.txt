@@ -1,0 +1,6 @@
+1.0D0		gamac: power to consumption
+0.4D0		gamal: labor supply elasticity
+0.95D0		rhox
+0.225D0		sigex
+0.95D0		rhop
+0.007D0		sigep

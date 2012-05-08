@@ -1,0 +1,24 @@
+0.98572D0			beta : discount rate
+197.0D0				B	 : weight on disutility from working
+0.4D0				gama : labor supply elasticity
+0.0D0				avex : average of log idiosyncratic productivity
+0.929D0				rhox : persistence of log idiosyncratic productivity
+0.227D0				sigex: stdev of innovation to log idiosyncratic productivity
+
+
+==== rhox=0.933 sigx=0.265 ====
+0.9835855D0			beta : discount rate
+195.0D0				B	 : weight on disutility from working
+0.4D0				gama : labor supply elasticity
+0.0D0				avex : average of log idiosyncratic productivity
+0.933D0				rhox : persistence of log idiosyncratic productivity
+0.265D0				sigex: stdev of innovation to log idiosyncratic productivity
+
+
+==== rhox=0.929 sigx=0.227 ====
+0.98572D0			beta : discount rate
+197.0D0				B	 : weight on disutility from working
+0.4D0				gama : labor supply elasticity
+0.0D0				avex : average of log idiosyncratic productivity
+0.929D0				rhox : persistence of log idiosyncratic productivity
+0.227D0				sigex: stdev of innovation to log idiosyncratic productivity
