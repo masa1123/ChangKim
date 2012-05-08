@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="8.10" ProjectIdGuid="{1ECFE8DC-30BF-48CA-B594-1CB868F5026D}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" DeleteExtensionsOnClean="*.obj;*.mod;*.pdb;*.asm;*.map;*.dyn;*.dpi;*.tmp;*.log;*.ilk;*.exe;$(TargetPath)" MustRebuild="true" Command="$(TargetPath)">
+				<Tool Name="VFMidlTool" SwitchesHaveChanged="true" SuppressStartupBanner="true" HeaderFileName="$(InputName).h" TypeLibraryName="$(IntDir)/$(InputName).tlb"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFFortranCompilerTool" SwitchesHaveChanged="true" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" ModulePath="$(INTDIR)/" ObjectFile="$(INTDIR)/" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtSingleThreadedDebug" CompileOnly="true"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFLinkerTool" SwitchesHaveChanged="true" MustRebuild="true" OutputFile="$(OUTDIR)/Fluctuation2.exe" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" ProgramDatabaseFile="$(OUTDIR)/Fluctuation2.pdb" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool" SwitchesHaveChanged="true" ResourceOutputFileName="$(IntDir)/$(InputName).res"/>
+				<Tool Name="VFPreLinkEventTool"/></Configuration>
+		<Configuration Name="Release|Win32" DeleteExtensionsOnClean="*.obj;*.mod;*.pdb;*.asm;*.map;*.dyn;*.dpi;*.tmp;*.log;*.ilk;*.exe;$(TargetPath)" Command="$(TargetPath)">
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" HeaderFileName="$(InputName).h" TypeLibraryName="$(IntDir)/$(InputName).tlb"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" ModulePath="$(INTDIR)/" ObjectFile="$(INTDIR)/" CompileOnly="true"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFLinkerTool" OutputFile="$(OUTDIR)/Fluctuation2.exe" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole" StackReserveSize="10000000"/>
+				<Tool Name="VFResourceCompilerTool" ResourceOutputFileName="$(IntDir)/$(InputName).res"/>
+				<Tool Name="VFPreLinkEventTool"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Tools">
+		<File RelativePath="..\..\..\..\Toolbox\F90Tools\LinInterpModule.f90"/>
+		<File RelativePath="..\..\..\..\Toolbox\F90Tools\OptimizationMod.f90"/>
+		<File RelativePath="..\..\..\..\Toolbox\F90Tools\PolyInterpModule.f90"/>
+		<File RelativePath="..\..\..\..\Toolbox\F90Tools\TauchenMod.f90"/></Filter>
+		<Filter Name="Model">
+		<File RelativePath="..\Fluctuation2\Model\Globals.f90">
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="..\Fluctuation2\Model\GridsModule.f90"/>
+		<File RelativePath="..\Fluctuation2\Model\InitializationModule.f90">
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="..\Fluctuation2\Model\Main.f90">
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="..\Fluctuation2\Model\RegressionModule.f90"/>
+		<File RelativePath="..\Fluctuation2\Model\SaveResults.f90">
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="..\Fluctuation2\Model\SimulationModule.f90">
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="..\Fluctuation2\Model\TransitionModule.f90"/>
+		<File RelativePath="..\Fluctuation2\Model\ValueModule.f90">
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File></Filter>
+		<Filter Name="Input">
+		<File RelativePath="..\Fluctuation2\Input\CoefficientsIN.txt"/>
+		<File RelativePath="..\Fluctuation2\Input\parameters.txt"/></Filter>
+		<Filter Name="Output">
+		<Filter Name="Grids"/>
+		<Filter Name="SimulatedData"/>
+		<Filter Name="Solutions"/>
+		<Filter Name="TransitionProb"/></Filter></Files>
+	<Globals/></VisualStudioProject>

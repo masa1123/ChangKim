@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application - Converted from CVF" Version="8.10" ProjectIdGuid="{ABD1A6D5-850F-4FE9-9320-B8615E12E5DD}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Release|Win32" DeleteExtensionsOnClean="*.obj;*.mod;*.pdb;*.asm;*.map;*.dyn;*.dpi;*.tmp;*.log;*.ilk;*.exe;$(TargetPath)" Command="$(OUTDIR)\SteadyState.exe">
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TypeLibraryName="$(OUTDIR)/SteadyState.tlb"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" CallingConvention="callConventionCVF" ModulePath="$(INTDIR)/" ObjectFile="$(INTDIR)/" AssemblerListingLocation="$(INTDIR)/" CompileOnly="true"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/MACHINE:I386" OutputFile="$(OUTDIR)/SteadyState.exe" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" ProgramDatabaseFile="$(OUTDIR)/SteadyState.pdb" SubSystem="subSystemConsole" StackReserveSize="10000000" AdditionalDependencies="kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib"/>
+				<Tool Name="VFResourceCompilerTool" PreprocessorDefinitions="NDEBUG" Culture="rcKorean" ResourceOutputFileName="$(INTDIR)/$(InputName).res"/>
+				<Tool Name="VFPreLinkEventTool"/></Configuration>
+		<Configuration Name="Debug|Win32" DeleteExtensionsOnClean="*.obj;*.mod;*.pdb;*.asm;*.map;*.dyn;*.dpi;*.tmp;*.log;*.ilk;*.exe;$(TargetPath)" Command="$(OUTDIR)\SteadyState.exe">
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TypeLibraryName="$(OUTDIR)/SteadyState.tlb"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnArgMismatch="true" CallingConvention="callConventionCVF" ModulePath="$(INTDIR)/" ObjectFile="$(INTDIR)/" AssemblerListingLocation="$(INTDIR)/" Traceback="true" BoundsCheck="true" CompileOnly="true"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFLinkerTool" SwitchesHaveChanged="true" MustRebuild="true" AdditionalOptions="/MACHINE:I386" OutputFile="$(OUTDIR)/SteadyState.exe" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" ProgramDatabaseFile="$(OUTDIR)/SteadyState.pdb" SubSystem="subSystemConsole" AdditionalDependencies="kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib"/>
+				<Tool Name="VFResourceCompilerTool" PreprocessorDefinitions="_DEBUG" Culture="rcKorean" ResourceOutputFileName="$(INTDIR)/$(InputName).res"/>
+				<Tool Name="VFPreLinkEventTool"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Tools">
+		<File RelativePath="..\..\..\..\Toolbox\F90Tools\LinInterpModule.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="..\..\..\..\Toolbox\F90Tools\OptimizationMod.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="..\..\..\..\Toolbox\F90Tools\TauchenMod.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File></Filter>
+		<Filter Name="Model">
+		<File RelativePath="Model\AggregateVariables.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="Model\Globals.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="Model\GridsModule.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="Model\InitializationModule.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="Model\Main.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="Model\MeasureModule.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="Model\ReservationWageModule.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="Model\SaveResultsModule.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File>
+		<File RelativePath="Model\ValueModule.f90">
+			<FileConfiguration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration>
+			<FileConfiguration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool"/></FileConfiguration></File></Filter>
+		<Filter Name="Input">
+		<File RelativePath="Input\parameters.txt"/></Filter>
+		<Filter Name="Output">
+		<File RelativePath="Output\Aggregates.txt"/>
+		<Filter Name="Distribution">
+		<File RelativePath="Output\AsstDensity.txt"/>
+		<File RelativePath="Output\AsstDist.txt"/>
+		<File RelativePath="Output\AsstEarnDensity.txt"/>
+		<File RelativePath="Output\AsstEarnDist.txt"/>
+		<File RelativePath="Output\EarnDensity.txt"/>
+		<File RelativePath="Output\EarnDist.txt"/></Filter>
+		<Filter Name="Grids">
+		<File RelativePath="Output\agrid.txt"/>
+		<File RelativePath="Output\exgrid.txt"/>
+		<File RelativePath="Output\xgrid.txt"/></Filter>
+		<Filter Name="LaborSupply">
+		<File RelativePath="Output\LS.txt"/>
+		<File RelativePath="Output\ReservationWages.txt"/>
+		<File RelativePath="Output\ReservationX.txt"/></Filter>
+		<Filter Name="Measures">
+		<File RelativePath="Output\cmu.txt"/>
+		<File RelativePath="Output\mu.txt"/>
+		<File RelativePath="Output\prX.txt"/>
+		<File RelativePath="Output\trX.txt"/></Filter>
+		<Filter Name="Simulation">
+		<File RelativePath="Output\sQrTS.txt"/>
+		<File RelativePath="Output\sYrPanel.txt"/></Filter>
+		<Filter Name="Solutions">
+		<File RelativePath="Output\AS.txt"/>
+		<File RelativePath="Output\ASE.txt"/>
+		<File RelativePath="Output\ASN.txt"/>
+		<File RelativePath="Output\CS.txt"/>
+		<File RelativePath="Output\HR.txt"/>
+		<File RelativePath="Output\VF.txt"/>
+		<File RelativePath="Output\VFE.txt"/>
+		<File RelativePath="Output\VFN.txt"/></Filter></Filter></Files>
+	<Globals/></VisualStudioProject>
